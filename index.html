@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerome Andrew Ducduc</title>
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div id="logo-div">
+            <img src="assets/logo.png" alt="logo" id="logoImage">
+            <div class="logo">Gerome Andrew Ducduc</div>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Gerome Andrew Ducduc</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Gerome Andrew Ducduc</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="/assets/linkedin.png" alt="linked in" class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/gerome-andrew-ducduc/')">
+                <img src="/assets/github.png" alt="github" class="icon"
+                    onclick="window.open('https://github.com/geromeandrew')">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="/assets/about-pic.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>1 year <br />Full Stack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Bachelor of Science in Computer Engineering<br />Polytechnic University of the Philippines
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        A passionate software developer with a deep passion in machine learning, data
+                        science, and artificial intelligence. Equipped with a solid background in computer
+                        engineering, I've honed my skills in both front end and backend development roles,
+                        bolstered by numerous certifications and projects focused on machine learning,
+                        data science, and AI. Proficient in backend development, database management,
+                        and API programming, I thrive on leveraging data science techniques to derive
+                        actionable insights through statistical analysis and predictive modeling. My
+                        proficiency in artificial intelligence enables me to develop innovative solutions for
+                        real-world challenges, consistently delivering impactful and efficient systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Work Experience</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-title">Web and API Developer</h2>
+                    <p class="company-name">Radenta Technologies Inc.</p>
+                    <p class="date">December 2023 - Present</p>
+                    <ul class="experience-list">
+                        <li>Worked as both Front End and Backend Developer for a Payroll system, contributing to the development of intuitive user interfaces using C# Razor, JavaScript, and jQuery, while ensuring robust APIs, database management and system performance with Microsoft SQL Server and ASP.NET Core.</li>
+                        <li>Engaged in both Front End and Backend development roles for the Human Resource Information System (HRIS), employing C# Razor Pages, Bootstrap, JavaScript, and jQuery for frontend functionalities and Microsoft SQL Server and ASP.NET Core for backend tasks, ensuring seamless integration and optimal system performance.</li>
+                        <li>Contributed to backend development for the Flight On-Time Performance (OTP) System by creating SQL Stored Procedures and database design, while implementing frontend functionalities using C# Razor Pages.</li>
+                        <li>Spearheaded the creation of a Retrieval-Augmented Generation (RAG) Chatbot, leveraging open source LLMs, LangChain, FastAPI, and ReactJS technologies.</li>
+                        <li>Effectively communicated project progress and software capabilities through presentations to the company's core group.</li>
+                    </ul>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-title">Web Developer Intern</h2>
+                    <p class="company-name">Achieve Without Borders Inc.</p>
+                    <p class="date">2022</p>
+                    <ul class="experience-list">
+                        <li>Enhanced e-commerce web application functionality by creating innovative features using the Flutter Framework.</li>
+                        <li>Demonstrated problem-solving skills by actively identifying and resolving bugs within the application.</li>
+                        <li>Conducted rigorous unit testing using Cypress.io to maintain high-quality standards in the application.</li>
+                        <li>Collaborated within a dynamic team that successfully implemented the Agile Scrum Framework, actively engaging in daily sprint meetings and sprint planning sessions to drive project efficiency and success.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="article-container">
+                    <img src="./assets/retrieval.webp" alt="Retrieval Project" class="project-img" />
+                </div>
+                <p class="project-title">Retrieval Augmented-Generation Chatbot using LangChain, HuggingFace Transformers, and React.js</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/geromeandrew/rag-chatbot'">Github</button>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="article-container">
+                    <img src="./assets/Realtime Littering.webp" alt="Realtime Littering" class="project-img" />
+                </div>
+                <p class="project-title">Real-time Littering Surveillance System using Integrated YOLOv7 and LSTM for Spatiotemporal Action Recognition</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/geromeandrew/littering-action-detection-model'">Github</button>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="article-container">
+                    <img src="./assets/hails.webp" alt="HAILS Project" class="project-img" />
+                </div>
+                <p class="project-title">HAILS - Hand Sign Artificial Intelligence Learning System</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/geromeandrew/HAILS'">Github</button>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="article-container">
+                    <img src="./assets/Stellar Entity.webp" alt="Stellar Entity Classification" class="project-img" />
+                </div>
+                <p class="project-title">Stellar Entity Classification using Random Forest Algorithm</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/geromeandrew/stellar-entity-classification'">Github</button>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="article-container">
+                    <img src="./assets/sentiment.webp" alt="Sentiment Analysis" class="project-img" />
+                </div>
+                <p class="project-title">Sentiment Analysis Using Deep Learning</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/'">Github</button>
+                </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="project-card">
+                <div class="article-container">
+                    <img src="./assets/Predicting Heart Health.webp" alt="Predicting Heart Health" class="project-img" />
+                </div>
+                <p class="project-title">Predicting Heart Health with Ensemble Models</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/'">Github</button>
+                </div>
+            </div>
+            <!-- Project 7 -->
+            <div class="project-card">
+                <div class="article-container">
+                    <img src="./assets/House Prices.webp" alt="House Prices Prediction" class="project-img" />
+                </div>
+                <p class="project-title">House Prices Prediction using Advanced Regression Techniques</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/geromeandrew/random-forest-house-prices-prediction'">Github</button>
+                </div>
+            </div>
+            <!-- Project 8 -->
+            <div class="project-card">
+                <div class="article-container">
+                    <img src="./assets/University Admission.webp" alt="University Admission Prediction" class="project-img" />
+                </div>
+                <p class="project-title">University Admission Prediction using Extreme Gradient Boosted Trees Algorithm</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/geromeandrew/university-admission-predictor'">Github</button>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certificates'" />
+    </section>    
+    
+    <section id="certificates">
+        <p class="section__text__p1">My Certifications</p>
+        <h1 class="title">Certificates</h1>
+        <div class="certificates-container">
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/professional-cert/2QQZY73LX9GP')">
+                <p class="certificate-name"><a href="#">IBM Data Science Professional Certificate</a></p>
+                <p class="certificate-details">IBM Skills Network</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/professional-cert/5UCM4ZCX37C3')">
+                <p class="certificate-name"><a href="#">TensorFlow Developer Professional Certificate</a></p>
+                <p class="certificate-details">DeepLearning.AI</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/verify/H8TK5FG6CTAP')">
+                <p class="certificate-name"><a href="#">Machine Learning with Python</a></p>
+                <p class="certificate-details">IBM Skills Network</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/verify/HLFTC95VZ69U')">
+                <p class="certificate-name"><a href="#">Supervised Machine Learning: Regression and Classification</a></p>
+                <p class="certificate-details">Stanford Online</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('')">
+                <p class="certificate-name"><a href="#">Convolutional Neural Networks in TensorFlow</a></p>
+                <p class="certificate-details">DeepLearning.AI</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/verify/FS7SDQQUWNBC')">
+                <p class="certificate-name"><a href="#">Natural Language Processing in TensorFlow</a></p>
+                <p class="certificate-details">DeepLearning.AI</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/verify/LQFK66B6ZZTX')">
+                <p class="certificate-name"><a href="#">Sequences, Time Series, and Prediction</a></p>
+                <p class="certificate-details">DeepLearning.AI</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/verify/EK485JPHJBKW')">
+                <p class="certificate-name"><a href="#">Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning</a></p>
+                <p class="certificate-details">DeepLearning.AI</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/records/4Y8ZJBTJLNQ2')">
+                <p class="certificate-name"><a href="#">Data Analysis with Python</a></p>
+                <p class="certificate-details">IBM Skills Network</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/records/LCCBE2QLSQFH')">
+                <p class="certificate-name"><a href="#">Data Visualization with Python</a></p>
+                <p class="certificate-details">IBM Skills Network</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/records/JB6JJAVWKLNX')">
+                <p class="certificate-name"><a href="#">Tweet Emotion Recognition with TensorFlow</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/records/HMLWXJETFZZ9')">
+                <p class="certificate-name"><a href="#">Databases and SQL for Data Science</a></p>
+                <p class="certificate-details">IBM Skills Network</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/records/ZP2E3YJN4CCD')">
+                <p class="certificate-name"><a href="#">Python for Data Science and AI</a></p>
+                <p class="certificate-details">IBM Skills Network</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/records/DVWJ8TSVMH7A')">
+                <p class="certificate-name"><a href="#">Applied Data Science Capstone</a></p>
+                <p class="certificate-details">IBM Skills Network</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/records/ZNZ72DWD5KVG')">
+                <p class="certificate-name"><a href="#">Python Project for Data Science</a></p>
+                <p class="certificate-details">IBM Skills Network</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/records/CLHJCJR35QVV')">
+                <p class="certificate-name"><a href="#">Scikit-Learn to Solve Regression Machine Learning Problems</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/records/V4MX4ZC6ADNB')">
+                <p class="certificate-name"><a href="#">Build a Machine Learning Web App with Streamlit and Python</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.kaggle.com/learn/certification/geromeandrewducduc/intro-to-machine-learning')">
+                <p class="certificate-name"><a href="#">Intro to Machine Learning</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">kaggle.com, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.kaggle.com/learn/certification/geromeandrewducduc/intermediate-machine-learning')">
+                <p class="certificate-name"><a href="#">Feature Engineering</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">kaggle.com, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.kaggle.com/learn/certification/geromeandrewducduc/intermediate-machine-learning')">
+                <p class="certificate-name"><a href="#">Intermediate Machine Learning</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">kaggle.com, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.coursera.org/account/accomplishments/records/PPWYXXMPAMLQ')">
+                <p class="certificate-name"><a href="#">Introduction to Backend Development</a></p>
+                <p class="certificate-details">Meta</p>
+                <p class="certificate-date">coursera.org, 2023</p>
+            </div>
+            <div class="certificate-card">
+                <p class="certificate-name"><a href="#">National Certificate II in Computer Systems Servicing</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">TESDA, 2019</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.linkedin.com/learning/certificates/1f47eabc19f419f93666db8485b7fa5ac080c3c70822a53b463fed14c9f93cf9')">
+                <p class="certificate-name"><a href="#">Building Web APIs with ASP.NET Core in .NET</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">LinkedIn Learning, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.linkedin.com/learning/certificates/c6a1bc57354171e203d22d55c25ae40bdb7e8a9b7437cd39ecbd5885820428fe?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B%2FSg8dfExQQ%2B6R5WgvjEI0g%3D%3D')">
+                <p class="certificate-name"><a href="#">Advanced Web APIs with ASP.NET Core in .NET 6</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">LinkedIn Learning, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.linkedin.com/learning/certificates/8298fbd7add7dafdea7b4c96ceba56b5e108c869a7331b14885274583f7eb475?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bp%2FYYqxMpQ%2FulYW79R6FSUw%3D%3D')">
+                <p class="certificate-name"><a href="#">Relational Databases Essential Training</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">LinkedIn Learning, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.linkedin.com/learning/certificates/3c79cd414a060f1501cd7671c5304b8c396a55b8ac23a0952bb12ab9927597fa?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bp%2FYYqxMpQ%2FulYW79R6FSUw%3D%3D')">
+                <p class="certificate-name"><a href="#">Database Foundations: Intro to Databases</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">LinkedIn Learning, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.linkedin.com/learning/certificates/33efa30b29c8a940c5a8c86c649cda73a31212595b0ed18c12ab205598dbedaf?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bp%2FYYqxMpQ%2FulYW79R6FSUw%3D%3D')">
+                <p class="certificate-name"><a href="#">Database Foundations: Data Structures</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">LinkedIn Learning, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.linkedin.com/learning/certificates/7ddfac7ab7818b8c5b60fa4a1f94d8fa5b8a8c5ac4465537edc067396a183cb9?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bp%2FYYqxMpQ%2FulYW79R6FSUw%3D%3D')">
+                <p class="certificate-name"><a href="#">Database Foundations: Database Management</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">LinkedIn Learning, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.linkedin.com/learning/certificates/7ddfac7ab7818b8c5b60fa4a1f94d8fa5b8a8c5ac4465537edc067396a183cb9?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bp%2FYYqxMpQ%2FulYW79R6FSUw%3D%3D')">
+                <p class="certificate-name"><a href="#">Database Foundations: Administration</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">LinkedIn Learning, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.linkedin.com/learning/certificates/e99c4994bf477f07d3dcce037e7a8477a3a9eb3f8f1bc875d9a7831f3a824f6c?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bp%2FYYqxMpQ%2FulYW79R6FSUw%3D%3D')">
+                <p class="certificate-name"><a href="#">Database Foundations: Application Development</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">LinkedIn Learning, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.linkedin.com/learning/certificates/11bf3871ac643a93cb0968227b856cfe30f61c7d73289723659e67ae9369fc65?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bp%2FYYqxMpQ%2FulYW79R6FSUw%3D%3D')">
+                <p class="certificate-name"><a href="#">Learning Microsoft SQL Server 2022</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">LinkedIn Learning, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.linkedin.com/learning/certificates/64e25ad1cbecc8dc11bdb7c66fb81576ead3784bb260ce04b327ede74e129b16?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bp%2FYYqxMpQ%2FulYW79R6FSUw%3D%3D')">
+                <p class="certificate-name"><a href="#">Become a Database Administrator</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">LinkedIn Learning, 2023</p>
+            </div>
+            <div class="certificate-card" onclick="window.open('https://www.linkedin.com/learning/certificates/f167d6edc22dc61b110750efbbe78d788ca5cb1aa8b4265bc80596fc6820eb01?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bp%2FYYqxMpQ%2FulYW79R6FSUw%3D%3D')">
+                <p class="certificate-name"><a href="#">.NET Fundamentals: Concepts, APIs, and Libraries in the .NET Framework</a></p>
+                <p class="certificate-details"></p>
+                <p class="certificate-date">LinkedIn Learning, 2023</p>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+    </section>
+    
+    <section id="skills">
+        <p class="section__text__p1">My Skills</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+            <div class="skill-column">
+                <div class="skill-item">Backend Development (FastAPI, ASP.NET Core, Django REST Framework)</div>
+                <div class="skill-item">Frontend Development (HTML, CSS, jQuery, ReactJS, Flutter)</div>
+                <div class="skill-item">Exploratory Data Analysis</div>
+                <div class="skill-item">Data Visualization</div>
+                <div class="skill-item">Machine Learning Model Development</div>
+            </div>
+            <div class="skill-column">
+                <div class="skill-item">Computer Vision</div>
+                <div class="skill-item">Natural Language Processing</div>
+                <div class="skill-item">Generative AI (Retrieval-Augmented Generation Chatbots)</div>
+                <div class="skill-item">Database Management (SQL Server)</div>
+                <div class="skill-item">Python</div>
+            </div>
+            <div class="skill-column">
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">C#</div>
+                <div class="skill-item">SQL, Transact-SQL (T-SQL)</div>
+                <div class="skill-item">Git, GitHub, GitLab, Azure DevOps</div>
+            </div> 
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    
+    
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:geromeandrew7@gmail.com">geromeandrew7@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container" id="linkedInLink">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p onclick="window.open('https://www.linkedin.com/in/gerome-andrew-ducduc/')">LinkedIn</p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon" />
+                <p>09452231107 / 09764341929</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Gerome Ducduc. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
